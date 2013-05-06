@@ -1,7 +1,7 @@
 CPlusPlus_DoublyLinkedList
 ==========================
 
-The repo contains a Doubly Linked List (DLL) implementation for storing strings and main file for testing.
+This repo contains a C++ Doubly Linked List (DLL) implementation for storing strings and main file for testing.
 
 ####The DLL contains following basic functionalities:  
 #####Insert<br />
