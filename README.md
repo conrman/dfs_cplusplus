@@ -36,10 +36,13 @@ dfs
 Dfs takes as an argument the start node for the depth first search. Iterate through the adjacent nodes (in your matrix or adjacency list) in order of increasing node index as specified by the input. Print out the post-order-traversal, i.e. the order of node completion on a single line separated by white-spaces. (There is NO whitespace after the last entry!). Then repeat the prompt.
 
 DFS> dfs 0
+
 2 1 0
 DFS> dfs 1
+
 2 0 1
 DFS> dfs 2
+
 1 0 2
 DFS>
 

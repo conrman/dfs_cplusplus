@@ -116,5 +116,5 @@ void Graph::setIndex(int data) {
 void Graph::setRows() {
   curr = head;
 
-  for()
+  for (int i = 0; )
 }
