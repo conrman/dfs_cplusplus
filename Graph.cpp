@@ -1,20 +1,19 @@
-// File: DLL.cpp
-// Created Date: May 03, 2013 
-// Programmer: Ka-Son Chan
-// Description: This DLL.cpp is the Doubly Linked List (DLL) .cpp file which
-// contains all the variables, functions and classes definitions.
+// File: Graph.cpp
+// Programmer: Connor Freeman
 
-#include "DLL.h"
+#include "Graph.h"
 
-// DLL Constructor
-DLL::DLL() {
+// Graph Constructor
+Graph::Graph() {
   head = NULL;
   tail = NULL;
+  curr = NULL;
+  index = 0;
 }
 
-// InsertToHead
-// Insert new data to the head of the DLL
-void DLL::InsertToHead(string data) {
+// insertHead
+// Insert new data to the head of the Graph
+void Graph::insertHead(int data) {
   cout << "Insert " << data << " to head" << endl;
 
   if (head == NULL && tail == NULL) {
@@ -35,9 +34,9 @@ void DLL::InsertToHead(string data) {
   }
 }
 
-// InsertToTail
-// Insert new data to the tail of the DLL
-void DLL::InsertToTail(string data) {
+// insertTail
+// Insert new data to the tail of the Graph
+void Graph::insertTail(int data) {
   cout << "Insert " << data << " to tail" << endl;
 
   if (head == NULL && tail == NULL) {
@@ -59,8 +58,8 @@ void DLL::InsertToTail(string data) {
 }
 
 // IsEmpty
-// Return true if the DLL is empty
-bool DLL::IsEmpty() {
+// Return true if the Graph is empty
+bool Graph::IsEmpty() {
   if (head == NULL && tail == NULL)
     return true;
   else
@@ -68,8 +67,8 @@ bool DLL::IsEmpty() {
 }
 
 // PrintFromHead
-// Print the DLL from the head
-void DLL::PrintFromHead() {
+// Print the Graph from the head
+void Graph::PrintFromHead() {
   NodePtr tempPtr = head;
   cout << "Head -> ";
   while (tempPtr) {
@@ -80,8 +79,8 @@ void DLL::PrintFromHead() {
 }
 
 // PrintFromTail
-// Print the DLL from the tail
-void DLL::PrintFromTail() {
+// Print the Graph from the tail
+void Graph::PrintFromTail() {
   NodePtr tempPtr = tail;
   cout << "Tail -> ";
   while (tempPtr) {
@@ -92,8 +91,8 @@ void DLL::PrintFromTail() {
 }
 
 // Found
-// Return true if the data is in the DLL
-bool DLL::IsFound(string data) {
+// Return true if the data is in the Graph
+bool Graph::IsFound(int data) {
   NodePtr tempPtr = head;
   while (tempPtr) {
     if(data == tempPtr->data)
@@ -101,4 +100,21 @@ bool DLL::IsFound(string data) {
     tempPtr = tempPtr->next;
   }
   return false;
+}
+
+// Depth Frist Search
+// Iterate thru Graph from start node
+void Graph::DepthFirstSearch(int index, int startNode) {
+  NodePtr tempPtr = head;
+
+} 
+
+void Graph::setIndex(int data) {
+  index = data;
+}
+
+void Graph::setRows() {
+  curr = head;
+
+  for()
 }

@@ -1,7 +1,7 @@
-main:	DLL.o main.cpp
-	g++ DLL.o main.cpp -o main
+main:	Graph.o main.cpp
+	g++ Graph.o main.cpp -o main
 
-DLL.o:	DLL.h DLL.cpp
+Graph.o:	Graph.h Graph.cpp
 
 clean:
 	rm -f main *.o
